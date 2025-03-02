@@ -136,3 +136,59 @@ function openImageModal(imageSrc) {
     modalImage.src = imageSrc;
     caption.innerHTML = "Klik gambar untuk menutup";
 }
+
+// import { addDoc, collection } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
+
+// Referensi ke koleksi Firestore
+// const itemsRef = collection(db, "items");
+
+// Fungsi untuk menyimpan data ke Firestore
+// async function saveDataToFirestore(data) {
+  // try {
+//     await addDoc(itemsRef, data);
+//     console.log("Data berhasil disimpan ke Firestore");
+//   } catch (error) {
+//     console.error("Error menyimpan data:", error);
+//   }
+// }
+// document.getElementById("dataForm").addEventListener("submit", function (e) {
+//   e.preventDefault();
+
+//   const name = document.getElementById("itemName").value;
+//   const use = document.getElementById("itemUse").value;
+//   const reason = document.getElementById("itemReason").value;
+//   const cost = parseFloat(document.getElementById("itemCost").value);
+//   const activePeriod = document.getElementById("itemActivePeriod").value;
+
+//   const itemData = { name, use, reason, cost, activePeriod };
+
+  // Simpan ke Firestore
+//   saveDataToFirestore(itemData);
+
+//   alert("Data berhasil disimpan ke Firestore!");
+// });
+// import { getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
+
+// Fungsi untuk menampilkan data dari Firestore
+// async function renderTableFromFirestore() {
+//   const querySnapshot = await getDocs(itemsRef);
+//   let tableContent = "";
+
+//   querySnapshot.forEach((doc) => {
+//     const item = doc.data();
+//     tableContent += `
+//       <tr>
+//         <td>${item.name}</td>
+//         <td>${item.use}</td>
+//         <td>${item.reason}</td>
+//         <td>Rp ${item.cost}</td>
+//         <td>${item.activePeriod}</td>
+//       </tr>
+//     `;
+//   });
+
+//   document.getElementById("dataTable").innerHTML = tableContent;
+// }
+
+// // Panggil fungsi saat halaman dimuat
+// renderTableFromFirestore();
